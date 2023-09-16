@@ -13,7 +13,7 @@ services:
 
 
   authentication-service:
-    image:
+    build:
       context: ./../authentication-service
       dockerfile: ./../authentication-service/authentication-service.dockerfile
     restart: always
