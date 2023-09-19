@@ -52,7 +52,7 @@ services:
 
   
   mongo:
-    image: 'mongo:4.2.16-bionic'
+    image: 'mongo:6-jammy'
     ports:
       - "27017:27017"
     environment:
@@ -61,3 +61,5 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: password
     volumes:
       - ./db-data/mongo:/data/db
+
+mongosh -u admin -p password --authenticationDatabase admin
