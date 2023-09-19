@@ -2,4 +2,4 @@ project/db-data
 authentication-service/authApp
 front-end/frontApp
 broker-service/brokerApp
-
+logger-service/loggerServiceApp

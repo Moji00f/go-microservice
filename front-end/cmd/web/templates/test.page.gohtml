@@ -119,7 +119,7 @@
             fetch("http:\/\/localhost:8080/handle", body)
             .then((response)=> response.json())
             .then((data)=>{
-                sent.innerHTML = JSON.stringify(payLoad, undefined, 4)
+                sent.innerHTML = JSON.stringify(payload, undefined, 4)
                 received.innerHTML = JSON.stringify(data, undefined, 4)
                 if (data.error){
                     output.innerHTML += `<br><strong>Error:</strong> ${data.message}`
