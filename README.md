@@ -16,4 +16,8 @@ go get github.com/jackc/pgx/v4/stdlib
 # connect to mongodb
 go get go.mongodb.org/mongo-driver/mongo
 go get go.mongodb.org/mongo-driver/options
+
+# Email
+go get github.com/vanng822/go-premailer/premailer
+go get github.com/xhit/go-simple-mail/v2
 ```
