@@ -53,6 +53,14 @@ services:
       FROM_NAME: "Mojtaba Ahmadi"
       FROM_ADDRESS: "Moji00f@gmail.com"
 
+  listener-service:
+    build:
+      context: ./../listener-service
+      dockerfile: ./../listener-service/listener-service.dockerfile
+    deploy:
+      mode: replicate4d
+      replicas: 1
+
 
   postgres:
     image: 'postgres:14.2'
