@@ -23,4 +23,15 @@ go get github.com/xhit/go-simple-mail/v2
 
 # RabbitMQ
 go get github.com/rabbitmq/amqp091-go
+
+#grpc
+go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.27 
+go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2 
+wget https://github.com/protocolbuffers/protobuf/releases/download/v24.3/protoc-24.3-linux-x86_64.zip
+unzip 
+cd logs
+protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative logs.proto 
+
+go get google.golang.org/grpc 
+go get google.golang.org/protobuf
 ```
