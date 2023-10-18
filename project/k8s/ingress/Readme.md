@@ -1,6 +1,17 @@
 #### Config Ingress on Bare-metal
 [Bare-meal](https://github.com/kubernetes/ingress-nginx/blob/main/docs/deploy/baremetal.md#external-ips)
 
+[Platform9](https://platform9.com/learn/v1.0/tutorials/crashloopbackoff)
+
+[metallb-loadbalancer](https://docs.k0sproject.io/v1.24.4+k0s.0/examples/metallb-loadbalancer/)
+
+[nginx-ingress](https://docs.k0sproject.io/v1.24.4+k0s.0/examples/nginx-ingress/)
+
+[official-ingress-nginx](https://kubernetes.github.io/ingress-nginx/user-guide/cli-arguments/)
+
+![nginx-ingress](https://github.com/Moji00f/go-microservice/blob/main/project/k8s/ingress/Nginx-Ingress%20.png)
+
+
 To config ingress withou LoadBalancer like MetalLB we need to set value of two field :
 - `externalTrafficPolicy`
 - `externalIPs`
